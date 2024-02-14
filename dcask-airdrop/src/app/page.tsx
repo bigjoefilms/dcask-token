@@ -5,7 +5,7 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-   <main className=" flex">
+   <main className=" flex lg:flex-row flex-col h-[100vh]">
    
 
      
@@ -18,7 +18,7 @@ export default function Home() {
       <p className="text-[36px] font-semibold ">Digicask Testnet faucet tokens</p>
       <div></div>
     </div>
-    <div className="absolute bottom-0 right-6 ">
+    <div className="absolute bottom-0 right-6 lg:flex hidden">
    
                                         <Image
                                             src="/coins.png"
@@ -35,16 +35,16 @@ export default function Home() {
 
 
     </div>
-    <div className="flex-1 flex-col flex justify-center items-center h-[100vh] relative border">
+    <div className="flex-1 flex-col flex justify-center items-center h-[100%] relative border w-[100%]">
       <div>
       <h1 className="text-[14px] my-[10px] ">Send to </h1>
 
-      <input className=" w-[545px] h-[45px] border rounded-[8px] px-[10px] py-[5px] text-[14px] item" placeholder="Wallet address"/>
+      <input className=" w-full max-w-[545px] h-[45px] border rounded-[8px] px-[10px] py-[5px] text-[14px] item" placeholder="Wallet address"/>
       <p className="text-[12px] text-[#777575] my-[5px]">Limit one request per pairing of stablecoin and test network daily</p>
 
-      <button className="w-[545px] h-[45px] justify-center items-center text-[14px] rounded-[8px] bg-[#008080] my-[15px] hover:opacity-85 text-[#fff]">Claim 50 $dcask </button>
+      <button className="w-full max-w-[545px] h-[45px] justify-center items-center text-[14px] rounded-[8px] bg-[#008080] my-[15px] hover:opacity-85 text-[#fff]">Claim 50 $dcask </button>
       
-      <p className="items-center justify-center flex text-[14px] text-[#777575] my-[10px]"> Need help using this faucet? <span className="text-[14px] text-[#007acd] cursor-pointer px-[5px] ">  HELP CENTER</span> </p>
+      <p className="items-center justify-center flex text-[14px] text-[#777575] my-[10px]"> Need help using this faucet? <span className="text-[14px] text-[#008080] cursor-pointer px-[5px] ">  HELP CENTER</span> </p>
       <div className="absolute bottom-10 right-20">
 
       
